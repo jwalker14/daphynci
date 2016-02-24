@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actionmailer (4.2.1)
       actionpack (= 4.2.1)
@@ -37,13 +38,31 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    autoprefixer-rails (6.3.3.1)
+      execjs
+    awesome_print (1.6.1)
     bcrypt (3.1.10)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+    bootstrap-wysihtml5-rails (0.3.3.8)
+      railties (>= 3.0)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
+    callsite (0.0.11)
     chunky_png (1.3.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
+    coderay (1.1.1)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -80,8 +99,12 @@ GEM
     erubis (2.7.0)
     execjs (2.5.2)
     ffi (1.9.10)
+    font-awesome-rails (4.5.0.1)
+      railties (>= 3.2, < 5.1)
+    git-version-bump (0.15.1)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    has_permalink (0.1.7)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.3.1)
@@ -96,7 +119,12 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    meta_request (0.4.0)
+      callsite (~> 0.0, >= 0.0.11)
+      rack-contrib (~> 1.1)
+      railties (>= 3.0.0, < 5.1.0)
     mime-types (2.6.1)
+    mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.2)
@@ -104,7 +132,16 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    paperclip (4.3.5)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
     rack (1.6.4)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -118,6 +155,7 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.2.1)
       sprockets-rails
+    rails-assets-tether (1.1.1)
     rails-backbone (1.2.0)
       coffee-rails
       ejs
@@ -142,6 +180,7 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.2.0)
       json (~> 1.4)
+    remotipart (1.2.1)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     sass (3.4.15)
@@ -154,6 +193,8 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    select2-rails (4.0.1)
+      thor (~> 0.14)
     socket.io-rails (1.3.5)
       railties (>= 3.1)
     spring (1.3.6)
@@ -188,20 +229,36 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
+  bcrypt (~> 3.1.7)
+  better_errors
+  binding_of_caller
+  bootstrap-sass
+  bootstrap-wysihtml5-rails
   byebug
   coffee-rails (~> 4.1.0)
   compass-rails
   devise
   ejs
+  font-awesome-rails
+  has_permalink
   jbuilder (~> 2.0)
   jquery-rails
+  meta_request
   mysql2
-  rails (= 4.2.1)
+  paperclip
+  rails
+  rails-assets-tether (>= 1.1.0)!
   rails-backbone
+  remotipart
   sass-rails
   sdoc (~> 0.4.0)
+  select2-rails
   socket.io-rails
   spring
   turbolinks
-  uglifier (>= 1.3.0)
+  uglifier
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.11.2

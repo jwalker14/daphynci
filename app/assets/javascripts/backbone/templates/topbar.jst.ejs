@@ -1,0 +1,30 @@
+<div class="header-left">
+  <%= JST['backbone/templates/partials/_header-left']() %>
+</div>
+<div class="header-right">
+  <ul class="header-menu nav navbar-nav">
+    <!-- BEGIN USER DROPDOWN -->
+    <li class="dropdown" id="language-header">
+      <%= JST['backbone/templates/partials/_user-dropdown']() %>
+    </li>
+    <!-- END USER DROPDOWN -->
+    <!-- BEGIN NOTIFICATION DROPDOWN -->
+    <li class="dropdown" id="notifications-header">
+      <%= JST['backbone/templates/partials/notification-header']() %>
+    </li>
+    <!-- END NOTIFICATION DROPDOWN -->
+    <!-- BEGIN MESSAGES DROPDOWN -->
+    <li class="dropdown" id="messages-header">
+      <%= JST['backbone/templates/partials/_messages-header']() %>
+    </li>
+    <!-- END MESSAGES DROPDOWN -->
+    <!-- BEGIN USER DROPDOWN -->
+    <li class="dropdown" id="user-header">
+      <%= JST['backbone/templates/partials/_user-header']() %>
+    </li>
+    <!-- END USER DROPDOWN -->
+    <!-- CHAT BAR ICON -->
+    <li id="quickview-toggle"><a href="#"><i class="icon-bubbles"></i></a></li>
+  </ul>
+</div>
+<!-- header-right -->

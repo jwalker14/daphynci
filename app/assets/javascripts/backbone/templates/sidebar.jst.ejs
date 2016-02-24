@@ -1,0 +1,33 @@
+<!-- BEGIN SIDEBAR -->
+<div class="logopanel">
+  <h1>
+    <a href="dashboard.html"></a>
+  </h1>
+</div>
+<div class="sidebar-inner">
+  <%= JST['backbone/templates/partials/_sidebar_top']() %>
+  <div class="menu-title">
+    Navigation
+    <div class="pull-right menu-settings">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
+      <i class="icon-settings"></i>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#" id="reorder-menu" class="reorder-menu">Reorder menu</a></li>
+        <li><a href="#" id="remove-menu" class="remove-menu">Remove elements</a></li>
+        <li><a href="#" id="hide-top-sidebar" class="hide-top-sidebar">Hide user &amp; search</a></li>
+      </ul>
+    </div>
+  </div>
+  <ul class="nav nav-sidebar">
+    <%= JST['backbone/templates/partials/_nav']() %>
+  </ul>
+  <!-- SIDEBAR WIDGET FOLDERS -->
+  <div class="sidebar-widgets">
+    <%= JST['backbone/templates/partials/_widgets']() %>
+  </div>
+  <div class="sidebar-footer clearfix">
+    <%= JST['backbone/templates/partials/_sidebar-footer']() %>
+  </div>
+</div>
+<!-- END SIDEBAR -->
