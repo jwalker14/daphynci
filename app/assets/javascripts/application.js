@@ -14,6 +14,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-migrate-min
+//= require plugins/greensock
+//= require bootstrap-sprockets
+//= require jquery.backstretch
+//= require plugins/lada.min
+//= require plugins/login-v2.js.erb
 //= require socket.io
 //= require turbolinks
 //= require underscore

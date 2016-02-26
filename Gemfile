@@ -13,6 +13,9 @@ gem 'compass-rails'
 # PLUGINS
 gem "font-awesome-rails"
 gem "select2-rails"
+gem 'jquery-migrate-rails'
+gem 'greensock-rails'
+gem 'backstretch-rails'
 # To handle Uploads
 gem "paperclip"
 gem "remotipart"
