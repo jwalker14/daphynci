@@ -1,0 +1,43 @@
+class App.Views.Dashboard extends App.Views.Base
+  template: ->
+    return Mustache.render(JST['backbone/templates/layout']());
+  el: 'body'
+  className : 'fixed-topbar fixed-sidebar color-default dashboard theme-sdtd bg-light-dark'
+  model: new App.Models.User({id:$('meta[name=current_user]').attr("content")})
+  regions:
+    "sidebar": ".sidebar"
+    "topbar": ".topbar"
+    "quickview": "#quickview"
+    "morphsearch": "#morphsearch"
+    "pageContent": ".page-content"
+  events:
+    'click .lockout': 'lockout'
+  initialize: ->
+    @render();
+    othis = this
+    @model.fetch
+      success: () ->
+        console.log "Success"
+        window.sidebar = new App.Views.Sidebar(othis.model)
+        othis.topbar.show(new App.Views.Topbar(othis.model))
+        othis.quickview.show(new App.Views.Quickview())
+        othis.morphsearch.show(new App.Views.MorphSearch())
+      error: ->
+        console.log "Error"
+  render: ->
+    @$el.html @template()
+    @$el.addClass @className
+    window.loaderView = new App.Views.Loader()
+
+
+
+  onShow: (v,r,o) ->
+    @hideLoader();
+  onSwap: ->
+    @hideLoader();
+  doesSomething: ->
+    alert('Im doing something')
+
+  lockout: ->
+    App.router.navigate('lock', { trigger : true });
+

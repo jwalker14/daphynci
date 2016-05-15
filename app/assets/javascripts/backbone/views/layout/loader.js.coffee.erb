@@ -1,0 +1,9 @@
+class App.Views.Loader extends App.Views.Base
+  template: -> JST["backbone/templates/partials/_loader"]
+  el: '.loader-overlay'
+  initialize: ->
+    super
+    @render()
+  render: ->
+    console.log 'loader'
+    @$el.html @template()

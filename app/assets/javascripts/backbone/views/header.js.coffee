@@ -1,4 +1,4 @@
-class App.Views.Header extends Backbone.View
+class App.Views.Header extends App.Views.Base
   template: -> $('header').html();
   el: 'header'
   events:

@@ -1,4 +1,4 @@
-class App.Views.Contact extends Backbone.View
+class App.Views.Contact extends App.Views.Base
   template: -> JST["backbone/templates/contact"]
   el: '#pagewrapper'
 

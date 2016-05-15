@@ -1,4 +1,4 @@
-class App.Views.Footer extends Backbone.View
+class App.Views.Footer extends App.Views.Base
   template: -> $('#footer').html();
   el: '#footer'
   events:

@@ -12,14 +12,14 @@
         </ul>
     </div>
     <div class="account-form">
-        <form class="form-signin" role="form">
+        <form class="form-signin" role="form" method="post" action="/users/sign_in">
             <h3><strong>Sign in</strong> to your account</h3>
             <div class="append-icon">
-                <input type="text" name="name" id="name" class="form-control form-white username" placeholder="Username" required>
+                <input type="text" name="user[email]" id="name" class="form-control form-white username" placeholder="Email" required>
                 <i class="icon-user"></i>
             </div>
             <div class="append-icon m-b-20">
-                <input type="password" name="password" class="form-control form-white password" placeholder="Password" required>
+                <input type="password" name="user[password]" class="form-control form-white password" placeholder="Password" required>
                 <i class="icon-lock"></i>
             </div>
             <button type="submit" id="submit-form" class="btn btn-lg btn-dark btn-rounded ladda-button" data-style="expand-left">Sign In</button>
@@ -30,7 +30,7 @@
                     <button type="button" class="btn btn-lg btn-block btn-blue btn-square"><i class="fa fa-twitter pull-left"></i>Login with Twitter</button>
                 </div>
                 <div class="clearfix">
-                    <p class="new-here"><a href="user-signup-v2.html">New here? Sign up</a></p>
+                    <p class="new-here"><a href="/users/sign_up">New here? Sign up</a></p>
                 </div>
             </div>
         </form>
@@ -43,70 +43,8 @@
             <button type="submit" id="submit-password" class="btn btn-lg btn-danger btn-block ladda-button" data-style="expand-left">Send Password Reset Link</button>
             <div class="clearfix m-t-60">
                 <p class="pull-left m-t-20 m-b-0"><a id="login" href="#">Have an account? Sign In</a></p>
-                <p class="pull-right m-t-20 m-b-0"><a href="user-signup2.html">New here? Sign up</a></p>
-            </div>
-        </form>
-    </div>
-    <div id="account-builder">
-        <form class="form-horizontal" role="form">
-            <div class="row">
-                <div class="col-md-12">
-                    <i class="fa fa-spin fa-gear"></i>
-                    <h3><strong>Customize</strong> Login Page</h3>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="col-xs-8 control-label">Social Login</label>
-                        <div class="col-xs-4">
-                            <label class="switch m-r-20">
-                            <input id="social-cb" type="checkbox" class="switch-input" checked>
-                            <span class="switch-label" data-on="On" data-off="Off"></span>
-                            <span class="switch-handle"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="col-xs-8 control-label">Background Image</label>
-                        <div class="col-xs-4">
-                            <label class="switch m-r-20">
-                            <input id="image-cb" type="checkbox" class="switch-input" checked>
-                            <span class="switch-label" data-on="On" data-off="Off"></span>
-                            <span class="switch-handle"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="col-xs-8 control-label">Background Slides</label>
-                        <div class="col-xs-4">
-                            <label class="switch m-r-20">
-                            <input id="slide-cb" type="checkbox" class="switch-input">
-                            <span class="switch-label" data-on="On" data-off="Off"></span>
-                            <span class="switch-handle"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="col-xs-8 control-label">User Image</label>
-                        <div class="col-xs-4">
-                            <label class="switch m-r-20">
-                            <input id="user-cb" type="checkbox" class="switch-input">
-                            <span class="switch-label" data-on="On" data-off="Off"></span>
-                            <span class="switch-handle"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
+                <p class="pull-right m-t-20 m-b-0"><a href="/users/sign_up">New here? Sign up</a></p>
             </div>
         </form>
     </div>
 </div>
-<!-- END LOCKSCREEN BOX -->
-<p class="account-copyright">
-    <span>Copyright © 2015 </span><span>THEMES LAB</span>.<span>All rights reserved.</span>
-</p>

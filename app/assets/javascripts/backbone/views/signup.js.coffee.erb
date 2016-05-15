@@ -1,0 +1,31 @@
+class App.Views.SignUp extends App.Views.Base
+  template: -> JST['backbone/templates/partials/_signup'];
+  el: 'body'
+  className: 'account2 signup'
+  events:
+    'click .somethingspecial': 'doesSomething'
+    'click #submit-form': 'doSignUp'
+
+  initialize: ->
+    console.log @template()
+    @render();
+    @$el.addClass(@className)
+    # get the auth token from the head
+    $('form').prepend("<input type='hidden' name='authenticity_token' value='" + $('meta[name=csrf-token]').attr('content') + "'>")
+    $.backstretch [ '<%= image_path('gallery/login.jpg') %>' ],
+      fade: 600
+      duration: 4000
+
+    $(window).resize ->
+      @copyrightPos()
+      return
+
+  render: ->
+    @$el.html @template()
+
+  doesSomething: ->
+    alert('Im doing something')
+
+  doSignUp: (e) ->
+    alert "BOOM"
+

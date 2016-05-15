@@ -1,0 +1,2 @@
+module LockScreensHelper
+end

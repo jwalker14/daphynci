@@ -1,4 +1,4 @@
-class App.Views.About extends Backbone.View
+class App.Views.About extends App.Views.Base
     template: -> JST["backbone/templates/about"]
     el: '#pagewrapper'
     initialize: ->

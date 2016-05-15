@@ -14,8 +14,11 @@ gem 'compass-rails'
 gem "font-awesome-rails"
 gem "select2-rails"
 gem 'jquery-migrate-rails'
+gem 'jquery-rails'
 gem 'greensock-rails'
 gem 'backstretch-rails'
+gem 'jquery-ui-rails'
+gem 'mustache-js-rails'
 # To handle Uploads
 gem "paperclip"
 gem "remotipart"
@@ -39,10 +42,14 @@ gem 'jquery-rails'
 # to use as the javascript framework.
 gem 'rails-backbone'
 gem 'ejs'
+gem 'marionette-rails'
 
 
 # For authentication
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 gem 'bootstrap-wysihtml5-rails'
 
 # because we need to add socket io for the communication part.

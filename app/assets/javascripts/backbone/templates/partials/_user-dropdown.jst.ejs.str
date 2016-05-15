@@ -1,0 +1,15 @@
+<a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+<i class="icon-globe"></i>
+<span>Language</span>
+</a>
+<ul class="dropdown-menu">
+  <li>
+    <a href="#" data-lang="en"><img src="#{ image_path('flags/usa.png') }" alt="flag-english"> <span>English</span></a>
+  </li>
+  <li>
+    <a href="#" data-lang="es"><img src="#{ image_path('flags/spanish.png') }" alt="flag-english"> <span>Español</span></a>
+  </li>
+  <li>
+    <a href="#" data-lang="fr"><img src="#{ image_path('flags/french.png') }" alt="flag-english"> <span>Français</span></a>
+  </li>
+</ul>

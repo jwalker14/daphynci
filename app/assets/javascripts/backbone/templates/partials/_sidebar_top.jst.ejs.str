@@ -1,0 +1,26 @@
+<div class="logopanel">
+  <h1>
+    <a href="dashboard.html"></a>
+  </h1>
+</div>
+<div class="sidebar-inner">
+  <div class="sidebar-top">
+    <form action="search-result.html" method="post" class="searchform" id="search-results">
+      <input type="text" class="form-control" name="keyword" placeholder="Search...">
+    </form>
+    <div class="userlogged clearfix">
+      <i class="icon icons-faces-users-01"></i>
+      <div class="user-details">
+        <h4>{{firstname}} {{lastname}}</h4>
+        <div class="dropdown user-login">
+          <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" data-delay="300">
+          <i class="online"></i><span>Available</span><i class="fa fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="busy"></i><span>Busy</span></a></li>
+            <li><a  href="#"><i class="turquoise"></i><span> </span></a></li>
+            <li><a href="#"><i class="away"></i><span>Fuck Off</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>

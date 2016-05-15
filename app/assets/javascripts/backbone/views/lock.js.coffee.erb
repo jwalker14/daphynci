@@ -1,0 +1,52 @@
+class App.Views.Lock extends App.Views.Base
+  template: (model) ->
+    return Mustache.render(JST['backbone/templates/lockscreen'](), model);
+  el: 'body'
+  className : 'account separate-inputs'
+  events:
+    'click .somethingspecial': 'doesSomething'
+
+  initialize:(model) ->
+    @model = model
+    @render();
+    $.backstretch [
+            '<%= image_path("gallery/login4.jpg") %>'
+            '<%= image_path("gallery/login3.jpg") %>'
+            '<%= image_path("gallery/login2.jpg") %>'
+            '<%= image_path("gallery/login.jpg") %>'
+          ],
+            fade: 600
+            duration: 4000
+
+      ### Creation of the Circle Progress ###
+
+      circle = new (ProgressBar.Circle)('#loader',
+        color: '#aaa'
+        strokeWidth: 3
+        trailWidth: 3
+        trailColor: 'rgba(255,255,255,0.1)'
+        easing: 'easeInOut'
+        duration: 2000
+        from:
+          color: '#319DB5'
+          width: 3
+        to:
+          color: '#319DB5'
+          width: 3
+        step: (state, circle) ->
+          circle.path.setAttribute 'stroke', state.color
+          circle.path.setAttribute 'stroke-width', state.width
+          return
+      )
+
+  render: ->
+    @$el.html @template(@model.toJSON())
+    @$el.addClass(@className)
+    window.loaderView = new App.Views.Loader()
+    @hideLoader();
+
+  doesSomething: ->
+    alert('Im doing something')
+
+  onShow: (v,r,o) ->
+    @unWrap();
