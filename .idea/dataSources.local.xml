@@ -2,13 +2,13 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails daphynciv2: development" uuid="28f4d38e-b1db-4223-beb3-023f8d27105d">
-      <user-name>root_remote</user-name>
+      <user-name>jb091584</user-name>
       <user-password>dfd8dfc5dfc9dfc1dfc5df9adf9edf92df9edf9b</user-password>
       <schema-pattern>daph2_development.*</schema-pattern>
       <default-schemas>daph2_development.*</default-schemas>
     </data-source>
     <data-source name="Rails daphynciv2: test" uuid="7c33964f-6ed6-4286-a4e8-2b3cd3f95b2f">
-      <user-name>root_remote</user-name>
+      <user-name>jb091584</user-name>
       <user-password>dfd8dfc5dfc9dfc1dfc5df9adf9edf92df9edf9b</user-password>
     </data-source>
     <data-source name="Rails daphynciv2: production" uuid="72147c91-48df-4e91-8231-20b4a553a47d">

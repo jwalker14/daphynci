@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root_remote
+  username: jb091584
   password: rocko04841
-  host: sej.daphynci.com
+  host: rds.c4stmogjpi2c.us-west-2.rds.amazonaws.com
 
 development:
   <<: *default
