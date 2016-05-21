@@ -24,16 +24,19 @@
             </div>
             <button type="submit" id="submit-form" class="btn btn-lg btn-dark btn-rounded ladda-button" data-style="expand-left">Sign In</button>
             <span class="forgot-password"><a id="password" href="account-forgot-password.html">Forgot password?</a></span>
+        </form>
             <div class="form-footer">
                 <div class="social-btn">
-                    <button type="button" class="btn-fb btn btn-lg btn-block btn-square"><i class="fa fa-facebook pull-left"></i>Connect with Facebook</button>
+                    <form method="get" action="/users/auth/facebook">
+                        <button type="submit" class="btn-fb btn btn-lg btn-block btn-square"><i class="fa fa-facebook pull-left"></i>Connect with Facebook</button>
+                    </form>
                     <button type="button" class="btn btn-lg btn-block btn-blue btn-square"><i class="fa fa-twitter pull-left"></i>Login with Twitter</button>
                 </div>
                 <div class="clearfix">
                     <p class="new-here"><a href="/users/sign_up">New here? Sign up</a></p>
                 </div>
             </div>
-        </form>
+
         <form class="form-password" role="form">
             <h3><strong>Reset</strong> your password</h3>
             <div class="append-icon m-b-20">

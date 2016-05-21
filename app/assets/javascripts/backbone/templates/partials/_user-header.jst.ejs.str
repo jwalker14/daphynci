@@ -1,5 +1,5 @@
 <a href="/profile" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-<img src="#{ image_path('avatars/user1.png') }" alt="user image">
+<img src="{{#user_image}}{{user_image}}?type=square{{/user_image}}{{^user_image}}#{ image_path('avatars/user1.png') }{{/user_image}}" alt="user image">
 <span class="username">Hi, {{ firstname }}</span>
 </a>
 <ul class="dropdown-menu">

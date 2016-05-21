@@ -5,6 +5,7 @@ class App.Views.SignUp extends App.Views.Base
   events:
     'click .somethingspecial': 'doesSomething'
     'click #submit-form': 'doSignUp'
+    'click #facebook': 'sign_in_with_facebook'
 
   initialize: ->
     console.log @template()
