@@ -1,0 +1,31 @@
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether.sass */
+.tether-element, .tether-element:after, .tether-element:before, .tether-element *, .tether-element *:after, .tether-element *:before {
+  box-sizing: border-box;
+}
+
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether.sass */
+.tether-element {
+  position: absolute;
+  display: none;
+}
+/* line 11, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether.sass */
+.tether-element.tether-open {
+  display: block;
+}
+
+/* line 2, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether-theme-basic.sass */
+.tether-element.tether-theme-basic {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 6, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether-theme-basic.sass */
+.tether-element.tether-theme-basic .tether-content {
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  background: #fff;
+  color: inherit;
+  padding: 1em;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}

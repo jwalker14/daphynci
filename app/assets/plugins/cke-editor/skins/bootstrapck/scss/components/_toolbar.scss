@@ -50,6 +50,7 @@ Special outer level classes used in this file:
 */
 
 /* The box that holds each toolbar. */
+@import "../config/config";
 .cke_toolbar {
     float: left;
 }

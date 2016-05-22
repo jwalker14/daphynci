@@ -1,0 +1,54 @@
+/*
+	jQuery.mmenu widescreen extension CSS
+*/
+/* line 13, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.widescreen.scss */
+html, body {
+  min-height: 100%;
+  overflow: auto;
+}
+
+/* line 18, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.widescreen.scss */
+body {
+  position: relative;
+}
+
+/* line 22, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.widescreen.scss */
+#mm-blocker {
+  display: none !important;
+}
+
+/* line 26, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.widescreen.scss */
+.mm-page {
+  box-shadow: none !important;
+  background: inherit;
+  width: 70% !important;
+  min-height: 100%;
+  height: auto !important;
+  margin: 0 !important;
+  left: 30% !important;
+  top: 0 !important;
+  position: relative !important;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.widescreen.scss */
+.mm-menu {
+  z-index: 0;
+  width: 30% !important;
+}
+/* line 46, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.widescreen.scss */
+.mm-menu.mm-top, .mm-menu.mm-right, .mm-menu.mm-bottom {
+  top: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 0 !important;
+}
+/* line 56, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.widescreen.scss */
+.mm-menu:first-child, .mm-menu.mm-current {
+  display: block;
+}

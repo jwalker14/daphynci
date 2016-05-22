@@ -1,0 +1,377 @@
+/*
+	jQuery.mmenu position extension CSS
+*/
+/* line 9, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-top {
+  width: 100%;
+}
+
+/* line 15, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-top.mm-opened .mm-page,
+html.mm-top.mm-opened #mm-blocker {
+  top: 0%;
+}
+
+/* line 23, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-top.mm-opened.mm-opening .mm-page,
+html.mm-top.mm-opened.mm-opening #mm-blocker,
+html.mm-top.mm-opened.mm-opening .mm-fixed-top,
+html.mm-top.mm-opened.mm-opening .mm-fixed-bottom {
+  left: 0;
+}
+
+/* line 33, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-right {
+  left: auto;
+  right: 0;
+}
+
+/* line 40, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-right.mm-opened .mm-page,
+html.mm-right.mm-opened #mm-blocker,
+html.mm-right.mm-opened .mm-fixed-top,
+html.mm-right.mm-opened .mm-fixed-bottom {
+  left: auto;
+  right: 0%;
+}
+
+/* line 51, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-right.mm-opened.mm-opening .mm-page,
+html.mm-right.mm-opened.mm-opening #mm-blocker,
+html.mm-right.mm-opened.mm-opening .mm-fixed-top,
+html.mm-right.mm-opened.mm-opening .mm-fixed-bottom {
+  left: auto;
+}
+
+/* line 61, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-bottom {
+  width: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+/* line 69, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-bottom.mm-opened .mm-page,
+html.mm-bottom.mm-opened #mm-blocker {
+  bottom: 0%;
+  top: auto;
+}
+
+/* line 78, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-bottom.mm-opened.mm-opening .mm-page,
+html.mm-bottom.mm-opened.mm-opening #mm-blocker,
+html.mm-bottom.mm-opened.mm-opening .mm-fixed-top,
+html.mm-bottom.mm-opened.mm-opening .mm-fixed-bottom {
+  top: auto;
+  left: 0;
+}
+
+/* line 60, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu.mm-top {
+  height: 80%;
+}
+
+/* line 66, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-top.mm-opening .mm-page,
+html.mm-top.mm-opening #mm-blocker,
+html.mm-top.mm-opening .mm-fixed-top {
+  top: 80%;
+}
+/* line 72, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-top.mm-opening .mm-fixed-bottom {
+  bottom: -80%;
+}
+
+@media all and (max-height: 175px) {
+  /* line 78, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-top {
+    height: 140px;
+  }
+
+  /* line 84, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-top.mm-opening .mm-page,
+  html.mm-top.mm-opening #mm-blocker,
+  html.mm-top.mm-opening .mm-fixed-top {
+    top: 140px;
+  }
+  /* line 90, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-top.mm-opening .mm-fixed-bottom {
+    bottom: -140px;
+  }
+}
+@media all and (min-height: 1100px) {
+  /* line 97, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-top {
+    height: 880px;
+  }
+
+  /* line 103, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-top.mm-opening .mm-page,
+  html.mm-top.mm-opening #mm-blocker,
+  html.mm-top.mm-opening .mm-fixed-top {
+    top: 880px;
+  }
+  /* line 109, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-top.mm-opening .mm-fixed-bottom {
+    bottom: -880px;
+  }
+}
+/* line 117, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu.mm-right {
+  width: 80%;
+}
+
+/* line 123, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-right.mm-opening .mm-page,
+html.mm-right.mm-opening #mm-blocker,
+html.mm-right.mm-opening .mm-fixed-top,
+html.mm-right.mm-opening .mm-fixed-bottom {
+  right: 80%;
+}
+
+@media all and (max-width: 175px) {
+  /* line 132, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-right {
+    width: 140px;
+  }
+
+  /* line 138, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-right.mm-opening .mm-page,
+  html.mm-right.mm-opening #mm-blocker,
+  html.mm-right.mm-opening .mm-fixed-top,
+  html.mm-right.mm-opening .mm-fixed-bottom {
+    right: 140px;
+  }
+}
+@media all and (min-width: 550px) {
+  /* line 148, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-right {
+    width: 440px;
+  }
+
+  /* line 154, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-right.mm-opening .mm-page,
+  html.mm-right.mm-opening #mm-blocker,
+  html.mm-right.mm-opening .mm-fixed-top,
+  html.mm-right.mm-opening .mm-fixed-bottom {
+    right: 440px;
+  }
+}
+/* line 165, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu.mm-bottom {
+  height: 80%;
+}
+
+/* line 171, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-bottom.mm-opening .mm-page,
+html.mm-bottom.mm-opening #mm-blocker,
+html.mm-bottom.mm-opening .mm-fixed-bottom {
+  bottom: 80%;
+}
+/* line 177, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-bottom.mm-opening .mm-fixed-top {
+  top: -80%;
+}
+
+@media all and (max-height: 175px) {
+  /* line 183, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-bottom {
+    height: 140px;
+  }
+
+  /* line 189, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-bottom.mm-opening .mm-page,
+  html.mm-bottom.mm-opening #mm-blocker,
+  html.mm-bottom.mm-opening .mm-fixed-bottom {
+    bottom: 140px;
+  }
+  /* line 195, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-bottom.mm-opening .mm-fixed-top {
+    top: -140px;
+  }
+}
+@media all and (min-height: 1100px) {
+  /* line 202, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-bottom {
+    height: 880px;
+  }
+
+  /* line 208, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-bottom.mm-opening .mm-page,
+  html.mm-bottom.mm-opening #mm-blocker,
+  html.mm-bottom.mm-opening .mm-fixed-bottom {
+    bottom: 880px;
+  }
+  /* line 214, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-bottom.mm-opening .mm-fixed-top {
+    top: -880px;
+  }
+}
+/*
+	jQuery.mmenu z-position extension CSS
+*/
+/* line 97, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-front.mm-opened .mm-page {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+/* line 106, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-front,
+.mm-menu.mm-next {
+  -webkit-transition: none 0.4s ease;
+  -moz-transition: none 0.4s ease;
+  -ms-transition: none 0.4s ease;
+  -o-transition: none 0.4s ease;
+  transition: none 0.4s ease;
+  -webkit-transition-property: top, right, bottom, left, -webkit-transform;
+  -moz-transition-property: top, right, bottom, left, -moz-transform;
+  -ms-transition-property: top, right, bottom, left, -o-transform;
+  -o-transition-property: top, right, bottom, left, -o-transform;
+  transition-property: top, right, bottom, left, transform;
+}
+
+/* line 121, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-front .mm-page,
+html.mm-front #mm-blocker {
+  z-index: 0;
+}
+
+/* line 127, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-front {
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* line 132, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-opened.mm-next .mm-page {
+  box-shadow: none;
+}
+
+/* line 140, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-opening .mm-menu.mm-front, html.mm-opening .mm-menu.mm-next {
+  left: 0%;
+}
+
+/* line 150, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-top.mm-front, .mm-menu.mm-top.mm-next {
+  left: 0;
+}
+
+/* line 158, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-opening .mm-menu.mm-top.mm-front, html.mm-opening .mm-menu.mm-top.mm-next {
+  left: 0;
+  top: 0%;
+}
+
+/* line 169, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-right.mm-front, .mm-menu.mm-right.mm-next {
+  left: auto;
+}
+
+/* line 177, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-opening .mm-menu.mm-right.mm-front, html.mm-opening .mm-menu.mm-right.mm-next {
+  left: auto;
+  right: 0%;
+}
+
+/* line 188, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+.mm-menu.mm-bottom.mm-front, .mm-menu.mm-bottom.mm-next {
+  top: auto;
+  left: 0;
+}
+
+/* line 197, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/extensions/jquery.mmenu.positioning.scss */
+html.mm-opening .mm-menu.mm-bottom.mm-front, html.mm-opening .mm-menu.mm-bottom.mm-next {
+  left: 0;
+  bottom: 0%;
+}
+
+/* line 230, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu.mm-front, .mm-menu.mm-next {
+  left: -80%;
+}
+
+@media all and (max-width: 175px) {
+  /* line 239, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-front, .mm-menu.mm-next {
+    left: -140px;
+  }
+}
+@media all and (min-width: 550px) {
+  /* line 249, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-front, .mm-menu.mm-next {
+    left: -440px;
+  }
+}
+/* line 260, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu.mm-top.mm-front, .mm-menu.mm-top.mm-next {
+  top: -80%;
+}
+
+@media all and (max-height: 175px) {
+  /* line 269, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-top.mm-front, .mm-menu.mm-top.mm-next {
+    top: -140px;
+  }
+}
+@media all and (min-height: 1100px) {
+  /* line 279, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-top.mm-front, .mm-menu.mm-top.mm-next {
+    top: -880px;
+  }
+}
+/* line 290, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu.mm-right.mm-front, .mm-menu.mm-right.mm-next {
+  right: -80%;
+}
+
+@media all and (max-width: 175px) {
+  /* line 299, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-right.mm-front, .mm-menu.mm-right.mm-next {
+    right: -140px;
+  }
+}
+@media all and (min-width: 550px) {
+  /* line 309, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-right.mm-front, .mm-menu.mm-right.mm-next {
+    right: -440px;
+  }
+}
+/* line 320, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu.mm-bottom.mm-front, .mm-menu.mm-bottom.mm-next {
+  bottom: -80%;
+}
+
+@media all and (max-height: 175px) {
+  /* line 329, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-bottom.mm-front, .mm-menu.mm-bottom.mm-next {
+    bottom: -140px;
+  }
+}
+@media all and (min-height: 1100px) {
+  /* line 339, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu.mm-bottom.mm-front, .mm-menu.mm-bottom.mm-next {
+    bottom: -880px;
+  }
+}
+/* line 352, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-front .mm-fixed-top,
+html.mm-front .mm-fixed-bottom,
+html.mm-opening.mm-front .mm-fixed-top,
+html.mm-opening.mm-front .mm-fixed-bottom {
+  left: 0;
+  right: auto;
+}
+/* line 358, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-front .mm-fixed-top,
+html.mm-opening.mm-front .mm-fixed-top {
+  top: 0;
+}
+/* line 362, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-front .mm-fixed-bottom,
+html.mm-opening.mm-front .mm-fixed-bottom {
+  bottom: 0;
+}

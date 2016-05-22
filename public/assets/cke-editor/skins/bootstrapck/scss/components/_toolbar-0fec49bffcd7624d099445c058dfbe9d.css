@@ -1,0 +1,358 @@
+/*
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+*/
+/*
+toolbar.css (part of editor.css)
+==================================
+
+This files styles the CKEditor toolbar and its buttons. For toolbar combo
+styles, check richcombo.css.
+
+The toolbar is rendered as a big container (called toolbox), which contains
+smaller "toolbars". Each toolbar represents a group of items that cannot be
+separated. The following is the visual representation of the toolbox.
+
++-- .cke_toolbox ----------------------------------------------------------+
+| +-- .cke_toolbar --+ +-- .cke_toolbar --+ ... +-- .cke_toolbar_break --+ |
+| |                  | |                  |     |                        | |
+| +------------------+ +------------------+     +------------------------+ |
+| +-- .cke_toolbar --+ +-- .cke_toolbar --+ ...                            |
+| |                  | |                  |                                |
+| +------------------+ +------------------+                                |
++--------------------------------------------------------------------------+
+
+The following instead is the visual representation of a single toolbar:
+
++-- .cke_toolbar ----------------------------------------------------------------+
+| +-- .cke_toolbar_start --+ +-- .cke_toolgroup (*) --+ +-- .cke_toolbar_end --+ |
+| |                        | |                        | |                      | |
+| +------------------------+ +------------------------+ +----------------------+ |
++--------------------------------------------------------------------------------+
+(*) .cke_toolgroup is available only when the toolbar items can be grouped
+    (buttons). If the items can't be group (combos), this box is not available
+    and the items are rendered straight in that place.
+
+This file also styles toolbar buttons, which are rendered inside the above
+.cke_toolgroup containers. This is the visual representation of a button:
+
++-- .cke_button -------------------------------------+
+| +-- .cke_button_icon --+ +-- .cke_button_label --+ |
+| |                      | |                       | |
+| +----------------------+ +-----------------------+ |
++----------------------------------------------------+
+
+Special outer level classes used in this file:
+
+    .cke_hc: Available when the editor is rendered on "High Contrast".
+    .cke_rtl: Available when the editor UI is on RTL.
+*/
+/* The box that holds each toolbar. */
+/* ==========================================================================
+   Config
+
+   This file is exclusively intended for setting up imports
+   Never add styles directly to this file
+   ========================================================================== */
+/* ==========================================================================
+   Colors
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+/* ==========================================================================
+   Defaults
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+/* ==========================================================================
+   Colors
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+/* line 55, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbar {
+  float: left;
+}
+
+/* line 59, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_toolbar {
+  float: right;
+}
+
+/* The box that holds buttons. */
+/* line 64, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolgroup {
+  float: left;
+  margin: 0 6px 3px 0;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+}
+
+/* line 75, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_toolgroup {
+  border: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 81, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_toolgroup *:first-child {
+  border-radius: 0 4px 4px 0;
+}
+
+/* line 85, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_toolgroup *:last-child {
+  border-radius: 4px 0 0 4px;
+}
+
+/* line 89, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_toolgroup {
+  float: right;
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+/* A toolbar button . */
+/* line 96, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+a.cke_button {
+  display: inline-block;
+  height: 18px;
+  padding: 2px 4px;
+  outline: none;
+  cursor: default;
+  float: left;
+  border: 0;
+  border-radius: 2px;
+}
+
+/* line 107, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_button {
+  float: right;
+}
+
+/* line 111, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_button {
+  border: 1px solid black;
+  /* Compensate the added border */
+  padding: 3px 5px;
+  margin: -2px 4px 0 -2px;
+}
+
+/* This class is applied to the button when it is "active" (pushed).
+   This style indicates that the feature associated with the button is active
+   i.e. currently writing in bold or when spell checking is enabled. */
+/* line 122, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_button_on {
+  background: #92bce0;
+}
+
+/* line 127, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_button_on {
+  border-width: 3px;
+  /* Compensate the border change */
+  padding: 1px 3px;
+}
+/* line 133, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc a.cke_button_off:hover, .cke_hc a.cke_button_off:focus, .cke_hc a.cke_button_off:active, .cke_hc a.cke_button_disabled:hover, .cke_hc a.cke_button_disabled:focus, .cke_hc a.cke_button_disabled:active {
+  border-width: 3px;
+  /* Compensate the border change */
+  padding: 1px 3px;
+}
+
+/* This class is applied to the button when the feature associated with the
+   button cannot be used (grayed-out).
+   i.e. paste button remains disabled when there is nothing in the clipboard to
+   be pasted. */
+/* line 145, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_button_disabled .cke_button_icon {
+  opacity: 0.3;
+}
+
+/* line 149, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_button_disabled {
+  opacity: 0.5;
+}
+
+/* line 159, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active {
+  background: #e1edf7;
+}
+
+/* The icon which is a visual representation of the button. */
+/* line 165, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_button_icon {
+  cursor: inherit;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+  width: 16px;
+  height: 16px;
+  float: left;
+  display: inline-block;
+}
+
+/* line 175, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_button_icon {
+  float: right;
+}
+
+/* line 179, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_button_icon {
+  display: none;
+}
+
+/* The label of the button that stores the name of the feature. By default,
+   labels are invisible. They can be revealed on demand though. */
+/* line 185, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_button_label {
+  display: none;
+  padding-left: 3px;
+  margin-top: 1px;
+  line-height: 18px;
+  vertical-align: middle;
+  float: left;
+  cursor: default;
+  color: #555;
+}
+
+/* line 196, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_button_label {
+  padding-right: 3px;
+  padding-left: 0;
+  float: right;
+}
+
+/* line 202, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_button_label {
+  padding: 0;
+  display: inline-block;
+  font-size: 12px;
+}
+
+/* The small arrow available on buttons that can be expanded
+   (e.g. the color buttons). */
+/* line 210, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_button_arrow {
+  /* Arrow in CSS */
+  display: inline-block;
+  margin: 8px 0 0 1px;
+  width: 0;
+  height: 0;
+  cursor: default;
+  vertical-align: top;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #474747;
+}
+
+/* line 223, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_button_arrow {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+/* line 228, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_button_arrow {
+  font-size: 10px;
+  margin: 3px -2px 0 3px;
+  width: auto;
+  border: 0;
+}
+
+/* The vertical separator which is used within a single toolbar to split
+   buttons into sub-groups. */
+/* line 237, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbar_separator {
+  float: left;
+  background-color: #ddd;
+  margin: 4px 2px 0;
+  height: 16px;
+  width: 1px;
+}
+
+/* line 245, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_toolbar_separator {
+  float: right;
+}
+
+/* line 249, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_toolbar_separator {
+  width: 0;
+  border-left: 1px solid;
+  margin: 1px 5px 0 0px;
+}
+
+/* The dummy element that breaks toolbars.
+   Once it is placed, the very next toolbar is moved to the new row. */
+/* line 257, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbar_break {
+  display: block;
+  clear: left;
+}
+
+/* line 262, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_toolbar_break {
+  clear: right;
+}
+
+/* The button, which when clicked hides (collapses) all the toolbars. */
+/* line 267, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbox_collapser {
+  width: 12px;
+  height: 11px;
+  float: right;
+  margin: 11px 0 0;
+  font-size: 0;
+  cursor: default;
+  text-align: center;
+  border: 1px solid #a6a6a6;
+  border-bottom-color: #979797;
+  border-radius: 4px;
+  background: #e4e4e4;
+  /* The CSS arrow, which belongs to the toolbar collapser. */
+}
+/* line 282, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbox_collapser:hover {
+  background: #ccc;
+}
+/* line 285, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbox_collapser.cke_toolbox_collapser_min {
+  margin: 0 2px 4px;
+}
+/* line 287, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbox_collapser.cke_toolbox_collapser_min .cke_arrow {
+  margin-top: 4px;
+  border-bottom-color: transparent;
+  border-top-color: #474747;
+}
+/* line 294, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_toolbox_collapser .cke_arrow {
+  display: inline-block;
+  /* Pure CSS Arrow */
+  height: 0;
+  width: 0;
+  font-size: 0;
+  margin-top: 1px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid #474747;
+  border-top: 3px solid transparent;
+}
+
+/* line 309, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_rtl .cke_toolbox_collapser {
+  float: left;
+}
+
+/* line 313, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/cke-editor/skins/bootstrapck/scss/components/_toolbar.scss */
+.cke_hc .cke_toolbox_collapser .cke_arrow {
+  font-size: 8px;
+  width: auto;
+  border: 0;
+  margin-top: 0;
+  margin-right: 2px;
+}

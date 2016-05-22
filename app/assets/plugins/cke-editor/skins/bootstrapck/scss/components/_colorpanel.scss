@@ -48,6 +48,8 @@ The COLOR PALETTE section instead is a table with a variable number of cells
 */
 
 /* The container of the color palette. */
+$gray:                  #aaa;
+$gray-lighter:          #eee;
 .cke_colorblock {
     padding: 3px;
     font-size: 11px;
@@ -91,7 +93,7 @@ a.cke_colorbox {
 a {
     &:hover, &:focus, &:active {
         &.cke_colorbox {
-            border: 1px solid $hr-border;
+            border: 1px solid $gray-lighter;
             background-color: $gray-lighter;
         }
     }
@@ -112,7 +114,7 @@ a.cke_colorauto, a.cke_colormore {
 a {
     &:hover, &:focus, &:active {
         &.cke_colorauto, &.cke_colormore {
-            border: 1px solid $hr-border;
+            border: 1px solid $gray-lighter;
             background-color: $gray-lighter;
         }
     }

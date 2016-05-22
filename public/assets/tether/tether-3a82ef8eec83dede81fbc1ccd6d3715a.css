@@ -1,0 +1,14 @@
+/* line 4, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether.sass */
+.tether-element, .tether-element:after, .tether-element:before, .tether-element *, .tether-element *:after, .tether-element *:before {
+  box-sizing: border-box;
+}
+
+/* line 7, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether.sass */
+.tether-element {
+  position: absolute;
+  display: none;
+}
+/* line 11, /usr/local/lib/ruby/gems/2.2.0/gems/rails-assets-tether-1.1.1/app/assets/stylesheets/tether/helpers/_tether.sass */
+.tether-element.tether-open {
+  display: block;
+}

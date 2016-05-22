@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_self
+ *= require_tree ./theme_styles/icons
  *= require font-awesome
  */
 @import "bootstrap-sprockets";

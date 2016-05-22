@@ -3,9 +3,10 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( vendor/modernizr.js )
-
 Rails.application.config.assets.precompile += %w(*.svg *.eot *.woff *.ttf *.gif *.png *.ico)
-Rails.application.config.assets.precompile << /\A(?!active_admin).*\.(js|css)\z/
+Rails.application.config.assets.precompile += %w( theme_styles/icons/font-awesome/font-awesome.css )
+Rails.application.config.assets.precompile += %w( theme_styles/icons/line-icons/line-icons.css )
+# Rails.application.config.assets.precompile << /\A(?!active_admin).*\.(js|css)\z/
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path

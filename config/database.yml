@@ -52,3 +52,4 @@ production:
   database: daph2_production
   username: jb091584
   password: rocko04841
+  secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>

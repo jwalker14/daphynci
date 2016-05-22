@@ -25,6 +25,7 @@ The visual representation of a rich combo widget looks as follows:
 */
 
 /* The box that hold the entire combo widget */
+@import "../config/config";
 .cke_combo {
     display: inline-block;
     float: left;

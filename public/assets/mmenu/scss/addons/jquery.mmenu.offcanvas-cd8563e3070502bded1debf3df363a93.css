@@ -1,0 +1,140 @@
+/*
+	jQuery.mmenu offcanvas addon CSS
+*/
+/* line 10, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+.mm-page,
+.mm-fixed-top,
+.mm-fixed-bottom {
+  -webkit-transition: none 0.4s ease;
+  -moz-transition: none 0.4s ease;
+  -ms-transition: none 0.4s ease;
+  -o-transition: none 0.4s ease;
+  transition: none 0.4s ease;
+  -webkit-transition-property: top, right, bottom, left, border;
+  -moz-transition-property: top, right, bottom, left, border;
+  -ms-transition-property: top, right, bottom, left, border;
+  -o-transition-property: top, right, bottom, left, border;
+  transition-property: top, right, bottom, left, border;
+}
+
+/* line 21, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+html.mm-opened .mm-page,
+html.mm-opened #mm-blocker {
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 0px solid transparent;
+}
+
+/* line 34, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+html.mm-opening .mm-page {
+  border: 0px solid #010101;
+}
+
+/* line 41, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+.mm-fixed-top,
+.mm-fixed-bottom {
+  position: fixed;
+  left: 0;
+}
+
+/* line 47, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+.mm-fixed-top {
+  top: 0;
+}
+
+/* line 51, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+.mm-fixed-bottom {
+  bottom: 0;
+}
+
+/* line 57, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+html.mm-opened {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* line 64, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+html.mm-opened .mm-page {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* line 69, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+html.mm-background .mm-page {
+  background: inherit;
+}
+
+/* line 73, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+#mm-blocker {
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) transparent;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+}
+
+/* line 85, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+html.mm-opened #mm-blocker,
+html.mm-blocking #mm-blocker {
+  display: block;
+}
+
+/* line 94, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+.mm-menu.mm-offcanvas {
+  display: none;
+  position: fixed;
+}
+/* line 99, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/addons/jquery.mmenu.offcanvas.scss */
+.mm-menu.mm-current {
+  display: block;
+}
+
+/* line 8, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+html.mm-opening .mm-page,
+html.mm-opening #mm-blocker,
+html.mm-opening .mm-fixed-top,
+html.mm-opening .mm-fixed-bottom {
+  left: 80%;
+}
+
+/* line 16, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+.mm-menu {
+  width: 80%;
+}
+
+@media all and (max-width: 175px) {
+  /* line 21, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu {
+    width: 140px;
+  }
+
+  /* line 27, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-opening .mm-page,
+  html.mm-opening #mm-blocker,
+  html.mm-opening .mm-fixed-top,
+  html.mm-opening .mm-fixed-bottom {
+    left: 140px;
+  }
+}
+@media all and (min-width: 550px) {
+  /* line 37, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  .mm-menu {
+    width: 440px;
+  }
+
+  /* line 43, /Applications/MAMP/htdocs/daphynciv2/app/assets/plugins/mmenu/scss/inc/_sizing.scss */
+  html.mm-opening .mm-page,
+  html.mm-opening #mm-blocker,
+  html.mm-opening .mm-fixed-top,
+  html.mm-opening .mm-fixed-bottom {
+    left: 440px;
+  }
+}

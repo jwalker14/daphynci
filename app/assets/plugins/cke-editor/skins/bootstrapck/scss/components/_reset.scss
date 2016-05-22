@@ -24,6 +24,7 @@ http://docs.cksource.com/CKEditor_4.x/Skin_SDK/Reset
 */
 
 /* Reset for single elements, not their children. */
+@import "../config/config";
 .cke_reset {
     /* Do not include inheritable rules here. */
     margin: 0;

@@ -44,7 +44,8 @@ Special outer level classes used in this file:
     .cke_hc: Available when the editor is rendered on "High Contrast".
 
 */
-
+@import "../config/colors";
+@import "../config/defaults";
 /* The outer boundary of the interface. */
 .cke_chrome {
     /* This is <span>, so transform it into a block.*/

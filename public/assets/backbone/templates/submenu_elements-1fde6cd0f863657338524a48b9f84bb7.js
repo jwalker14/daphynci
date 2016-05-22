@@ -1,0 +1,2 @@
+(function() { this.JST || (this.JST = {}); this.JST["backbone/templates/submenu_elements"] = function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<li class="nav-parent"><a href="#"><i class="icon-puzzle"></i> <span>Your menu</span> <span class="fa arrow"></span></a>\n  <ul class="children collapse">\n    <li><a href="builder-email.php">Submenu 1</a></li>\n    <li><a href="builder-page.php">Submenu 2</a></li>\n    <li><a href="builder-admin.php">Submenu 3</a></li>\n  </ul>\n</li>\n');}return __p.join('');};
+}).call(this);
