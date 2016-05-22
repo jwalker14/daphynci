@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: database_production
-  username: username
-  password: <%= ENV['DAPHYNCI_DATABASE_PASSWORD'] %>
+  database: daph2_production
+  username: jb091584
+  password: rocko04841
